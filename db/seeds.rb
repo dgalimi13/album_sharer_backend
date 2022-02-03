@@ -10,3 +10,5 @@
 rock = Genre.create(name: "Rock")
 rap = Genre.create(name: "Rap")
 country = Genre.create(name: "Country")
+
+Album.create(name: "Three Cheers for Sweet Revenge", artist: "My Chemical Romance", description: "Third Studio Album released in 2004")
