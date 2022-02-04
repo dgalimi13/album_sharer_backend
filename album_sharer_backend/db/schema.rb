@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2022_02_04_140943) do
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "genre_id"
+    t.bigint "genre_id", null: false
     t.index ["genre_id"], name: "index_albums_on_genre_id"
   end
 
