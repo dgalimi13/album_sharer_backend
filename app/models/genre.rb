@@ -1,4 +1,4 @@
 class Genre < ApplicationRecord
-    has_many :albums, dependant: :destroy
+    has_many :albums, dependent: :destroy
 
 end
