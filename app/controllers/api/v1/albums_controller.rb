@@ -10,7 +10,7 @@ class Api::V1::AlbumsController < ApplicationController
         if album.save
             render json: album, status: :accepted
         else
-            render json: {errors: album.errors.full_messages}, status :unprocessible_entity
+            render json: { errors: album.errors.full_messages}, status: :unprocessible_entity
         end 
     end 
 
