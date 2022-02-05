@@ -2,6 +2,10 @@ const endPoint = "http://127.0.0.1:3000/api/v1/albums"
 
 document.addEventListener('DOMContentLoaded', () => {
     getAlbums()
+
+    const createAlbumForm = document.querySelector("create-album-form")
+
+    createAlbumForm.addEventListener("submit", (e) => console.log(e))
 })
 
 function getAlbums() {
